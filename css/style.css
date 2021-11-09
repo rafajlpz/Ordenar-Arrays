@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(2, minmax(400px, 1fr));
+    column-gap: .5em;
+}
+
+.lista{
+    display:flex;
+    gap: 1em;
+
+
+    list-style-type: none;
+}
+
+.lista li::before{
+    content: "💖";
+}
+
+.lista li{
+    display: flex;
+}
